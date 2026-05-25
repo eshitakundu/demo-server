@@ -1,9 +1,24 @@
 [project]
-name = "tool-test"
+name = "demo-mcp-server"
 version = "0.1.0"
-description = "Add your description here"
+description = "A demo MCP server with practical tools for testing and demonstration"
 readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Eshita Kundu", email = "eshita.kundu.2026@gmail.com" }
+]
+keywords = ["mcp", "model-context-protocol", "fastmcp", "demo"]
 requires-python = ">=3.12"
 dependencies = [
     "fastmcp>=3.3.1",
+    "mcp[cli]>=1.27.1",
 ]
+
+[project.urls]
+Homepage = "https://github.com/eshitakundu/demo-mcp-server"
+Repository = "https://github.com/ehsitakundu/demo-mcp-server"
+Issues = "https://github.com/eshitakundu/demo-mcp-server/issues"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
